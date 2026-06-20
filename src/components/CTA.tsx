@@ -76,7 +76,7 @@ export default function CTA() {
               </button>
               
               <a
-                href="https://wa.me/919900000000?text=I%20want%20to%20get%20a%20price%20quote%20for%20a%20car%20upgrade!"
+                href="https://wa.me/917892671436?text=I%20want%20to%20get%20a%20price%20quote%20for%20a%20car%20upgrade!"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full sm:w-auto px-8 py-4 rounded-full bg-zinc-950 border border-zinc-800 hover:border-neon-blue/40 text-white font-heading font-extrabold text-xs uppercase tracking-widest flex items-center justify-center gap-2 hover:bg-zinc-900 transition-all duration-300 interactive-hover"
@@ -183,7 +183,7 @@ export default function CTA() {
                         required
                         value={phone}
                         onChange={(e) => setPhone(e.target.value)}
-                        placeholder="e.g. +91 99000 00000"
+                        placeholder="e.g. +91 78926 71436"
                         className="w-full bg-zinc-900 border border-white/5 rounded-lg px-4 py-3 text-sm text-white placeholder-zinc-600 focus:outline-none focus:border-neon-blue transition-colors duration-300"
                       />
                     </div>

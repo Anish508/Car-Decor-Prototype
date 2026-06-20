@@ -73,7 +73,7 @@ export default function Navbar() {
           {/* Call-to-action buttons */}
           <div className="hidden md:flex items-center gap-4">
             <a
-              href="https://wa.me/919900000000?text=I%20am%20interested%20in%20a%20luxury%20car%20upgrade!"
+              href="https://wa.me/917892671436?text=I%20am%20interested%20in%20a%20luxury%20car%20upgrade!"
               target="_blank"
               rel="noopener noreferrer"
               className="px-5 py-2.5 rounded-full bg-zinc-900 hover:bg-zinc-800 border border-white/10 hover:border-neon-blue/50 text-xs font-heading font-bold uppercase tracking-wider text-white flex items-center gap-2 transition-all duration-300 hover:shadow-[0_0_15px_rgba(0,240,255,0.2)]"
@@ -133,7 +133,7 @@ export default function Navbar() {
                 transition={{ delay: 0.6 }}
               >
                 <a
-                  href="https://wa.me/919900000000?text=I%20am%20interested%20in%20a%20luxury%20car%20upgrade!"
+                  href="https://wa.me/917892671436?text=I%20am%20interested%20in%20a%20luxury%20car%20upgrade!"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-8 py-3 rounded-full bg-zinc-900 border border-white/10 text-sm font-heading font-bold uppercase tracking-wider text-white flex items-center justify-center gap-2"

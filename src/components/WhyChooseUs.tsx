@@ -96,7 +96,7 @@ export default function WhyChooseUs() {
             <div className="w-12 h-12 rounded-xl bg-zinc-950 border border-white/10 flex items-center justify-center mb-6 group-hover:border-neon-blue/30 group-hover:shadow-[0_0_15px_rgba(0,240,255,0.15)] transition-all duration-300">
               <Award className="w-5 h-5 text-zinc-400 group-hover:text-neon-blue" />
             </div>
-            <Counter value={44} suffix="+" />
+            <Counter value={10} suffix="+" />
             <span className="text-xs font-heading font-extrabold uppercase tracking-widest text-zinc-500 mt-3 group-hover:text-zinc-400">
               Years in Business
             </span>

@@ -30,13 +30,13 @@ export default function Footer() {
             </div>
             
             <p className="text-xs text-zinc-500 leading-relaxed font-sans font-medium">
-              Mangalore's premier automotive customization studio since 1982. Redefining interior tailoring, acoustics engineering, and vehicle styling aesthetics.
+              Mangalore's premier automotive customization studio since 2016. Redefining interior tailoring, acoustics engineering, and vehicle styling aesthetics.
             </p>
 
             {/* Social channels */}
             <div className="flex items-center gap-4">
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/cardecorofficial?igsh=MWY2YTMzNXQ5endvag=="
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-9 h-9 rounded-full bg-zinc-900 border border-white/5 flex items-center justify-center text-zinc-400 hover:text-neon-blue hover:border-neon-blue/30 transition-all duration-300 interactive-hover"
@@ -108,8 +108,19 @@ export default function Footer() {
               </div>
               <div className="flex gap-3 items-center">
                 <Phone className="w-4 h-4 text-neon-blue shrink-0" />
-                <a href="tel:+919900000000" className="hover:text-white transition-colors duration-300">
-                  +91 99000 00000
+                <a href="tel:+917892671436" className="hover:text-white transition-colors duration-300">
+                  +91 78926 71436
+                </a>
+              </div>
+              <div className="flex gap-3 items-center">
+                <MessageSquare className="w-4 h-4 text-neon-blue shrink-0" />
+                <a
+                  href="https://wa.me/917892671436?text=Hello%20Car%20Decor%20Mangalore,%20I%20want%20to%20customize%20my%20vehicle!"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-white transition-colors duration-300"
+                >
+                  +91 78926 71436 (WhatsApp)
                 </a>
               </div>
               <div className="flex gap-3 items-center">

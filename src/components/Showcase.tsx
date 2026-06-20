@@ -61,25 +61,31 @@ export default function Showcase() {
 
   // GSAP Horizontal scrolling ScrollTrigger for the categories
   useEffect(() => {
-    const pin = gsap.fromTo(
-      horizontalSectionRef.current,
-      { translateX: 0 },
-      {
-        translateX: "-33.33%",
-        ease: "none",
-        scrollTrigger: {
-          trigger: triggerRef.current,
-          pin: true,
-          scrub: 1.2,
-          start: "top top",
-          end: () => `+=${horizontalSectionRef.current?.offsetWidth || 1000}`,
-          invalidateOnRefresh: true,
-        },
-      }
-    );
+    if (typeof window === "undefined") return;
+
+    const mm = gsap.matchMedia();
+
+    mm.add("(min-width: 1024px)", () => {
+      gsap.fromTo(
+        horizontalSectionRef.current,
+        { translateX: 0 },
+        {
+          translateX: "-33.33%",
+          ease: "none",
+          scrollTrigger: {
+            trigger: triggerRef.current,
+            pin: true,
+            scrub: 1.2,
+            start: "top top",
+            end: () => `+=${horizontalSectionRef.current?.offsetWidth || 1000}`,
+            invalidateOnRefresh: true,
+          },
+        }
+      );
+    });
 
     return () => {
-      pin.scrollTrigger?.kill();
+      mm.revert();
     };
   }, []);
 
@@ -117,7 +123,7 @@ export default function Showcase() {
           onMouseDown={() => setIsDragging(true)}
           onMouseUp={() => setIsDragging(false)}
           onMouseLeave={() => setIsDragging(false)}
-          className="relative h-[300px] md:h-[550px] w-full rounded-2xl overflow-hidden border border-white/5 cursor-ew-resize select-none shadow-[0_15px_40px_rgba(0,0,0,0.8)]"
+          className="relative h-[300px] md:h-[550px] w-full rounded-2xl overflow-hidden border border-white/5 cursor-ew-resize select-none shadow-[0_15px_40px_rgba(0,0,0,0.8)] touch-none"
         >
           {/* BEFORE IMAGE (Background) */}
           <div
@@ -159,10 +165,10 @@ export default function Showcase() {
         <div className="overflow-hidden">
           <div
             ref={horizontalSectionRef}
-            className="flex w-[150%] h-[70vh] items-center relative"
+            className="flex flex-col lg:flex-row w-full lg:w-[150%] h-auto lg:h-[70vh] items-stretch lg:items-center relative gap-8 lg:gap-0 px-6 lg:px-0"
           >
             {/* Introductory panel */}
-            <div className="w-[33.33%] h-full flex flex-col justify-center px-12 lg:px-24 bg-black border-r border-white/5">
+            <div className="w-full lg:w-[33.33%] h-auto lg:h-full flex flex-col justify-center py-8 lg:py-0 px-0 lg:px-24 bg-transparent lg:bg-black border-b lg:border-b-0 lg:border-r border-white/5">
               <div className="flex items-center gap-2 mb-4">
                 <Sparkles className="w-4 h-4 text-neon-blue" />
                 <span className="text-xs font-heading font-extrabold uppercase tracking-widest text-neon-blue">
@@ -182,7 +188,7 @@ export default function Showcase() {
             {builds.map((build, idx) => (
               <div
                 key={idx}
-                className="w-[33.33%] h-full flex items-center justify-center p-8 bg-zinc-950/80 border-r border-white/5 relative group overflow-hidden"
+                className="w-full lg:w-[33.33%] h-[350px] sm:h-[450px] lg:h-full flex items-center justify-center p-6 sm:p-8 bg-zinc-950 border lg:border-0 lg:border-r border-white/5 rounded-2xl lg:rounded-none relative group overflow-hidden"
               >
                 {/* Background Image with Zoom */}
                 <div

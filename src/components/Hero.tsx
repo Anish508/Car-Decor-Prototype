@@ -224,7 +224,7 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.5 }}
             className="text-sm md:text-lg text-zinc-400 font-sans leading-relaxed max-w-2xl mt-2 font-medium"
           >
-            Premium Car Accessories, Detailing, Audio Systems, Lighting, Seat Covers & Complete Vehicle Customization. Crafting high-fidelity experiences since 1982.
+            Premium Car Accessories, Detailing, Audio Systems, Lighting, Seat Covers & Complete Vehicle Customization. Crafting high-fidelity experiences since 2016.
           </motion.p>
 
           {/* Action Buttons */}
@@ -241,7 +241,7 @@ export default function Hero() {
               Book Consultation
             </a>
             <a
-              href="https://wa.me/919900000000?text=Hello%20Car%20Decor%20Mangalore,%20I%20want%20to%20customize%20my%20vehicle!"
+              href="https://wa.me/917892671436?text=Hello%20Car%20Decor%20Mangalore,%20I%20want%20to%20customize%20my%20vehicle!"
               target="_blank"
               rel="noopener noreferrer"
               className="px-8 py-4 rounded-full bg-zinc-950 border border-zinc-800 hover:border-neon-blue/50 text-white font-heading font-extrabold text-xs uppercase tracking-widest text-center flex items-center justify-center gap-2 hover:bg-zinc-900 transition-all duration-300 interactive-hover"
@@ -264,7 +264,7 @@ export default function Hero() {
         >
           <div className="flex items-center gap-3">
             <span className="text-2xl md:text-3xl font-heading font-extrabold text-white text-neon-glow">
-              44+
+              10+
             </span>
             <span className="text-[10px] uppercase font-heading text-zinc-500 font-bold tracking-widest leading-tight">
               Years<br />Experience
