@@ -21,7 +21,7 @@ export default function Legacy() {
           <div className="lg:col-span-5 flex flex-col justify-between border-l-2 border-amber-neon pl-6 md:pl-10 relative">
             {/* Absolute positioning badge */}
             <div className="absolute top-0 right-0 text-[100px] font-heading font-black text-cream-accent/5 select-none leading-none pointer-events-none">
-              1982
+              1992
             </div>
 
             <div className="flex flex-col gap-6">
@@ -30,13 +30,13 @@ export default function Legacy() {
               </span>
               
               <h2 className="text-5xl md:text-7xl font-heading font-black text-white leading-[0.85] tracking-tighter uppercase">
-                44+ Years Of <br />
+                34+ Years Of <br />
                 <span className="text-chrome">Precision</span> <br />
                 Craft
               </h2>
 
               <p className="text-zinc-400 font-sans text-sm md:text-base leading-relaxed mt-4">
-                Car Decor is not a software startup or a generic accessory retailer. Since 1982, we have operated as an exclusive customization garage, catering to drivers who demand uncompromising automotive individuality.
+                Car Decor is not a software startup or a generic accessory retailer. Since 1992, we have operated as an exclusive customization garage, catering to drivers who demand uncompromising automotive individuality.
               </p>
               
               <p className="text-zinc-500 font-sans text-xs md:text-sm leading-relaxed">
@@ -51,7 +51,7 @@ export default function Legacy() {
                 <span className="text-[10px] font-title font-black text-zinc-500 uppercase tracking-widest">Base Operations</span>
               </div>
               <div>
-                <span className="block text-4xl font-heading font-black text-white">44 YEARS</span>
+                <span className="block text-4xl font-heading font-black text-white">34 YEARS</span>
                 <span className="text-[10px] font-title font-black text-zinc-500 uppercase tracking-widest">Atelier Heritage</span>
               </div>
             </div>

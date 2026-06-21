@@ -29,7 +29,7 @@ export default function Footer() {
             </div>
             
             <p className="text-xs text-zinc-500 leading-relaxed font-sans font-medium max-w-xs">
-              Mangalore's premier automotive customization studio since 1982. Redefining interior comfort, acoustics engineering, and vehicle styling aesthetics.
+              Mangalore's premier automotive customization studio since 1992. Redefining interior comfort, acoustics engineering, and vehicle styling aesthetics.
             </p>
 
             {/* Social channels */}
@@ -127,7 +127,7 @@ export default function Footer() {
             <div className="flex flex-col gap-3 font-mono text-[10px] text-zinc-500">
               <div className="flex justify-between border-b border-cream-accent/5 pb-1">
                 <span>ESTABLISHED:</span>
-                <span className="text-white">1982</span>
+                <span className="text-white">1992</span>
               </div>
               <div className="flex justify-between border-b border-cream-accent/5 pb-1">
                 <span>WORKSHOP STATUS:</span>

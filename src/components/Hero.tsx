@@ -20,7 +20,7 @@ export default function Hero() {
         <div className="lg:col-span-7 flex flex-col justify-center px-6 sm:px-12 lg:px-20 pt-32 pb-12 relative z-10 border-r border-cream-accent/5">
           {/* Vertical layout stamp on the edge */}
           <div className="hidden xl:block absolute left-4 top-1/2 -translate-y-1/2 -rotate-90 origin-center text-[10px] font-title font-black uppercase tracking-[0.4em] text-zinc-600">
-            MANGALORE HQ // 12.8727° N, 74.8428° E // EST. 1982
+            MANGALORE HQ // 12.8727° N, 74.8428° E // EST. 1992
           </div>
 
           <div className="max-w-xl xl:pl-6 flex flex-col gap-6 md:gap-8">
@@ -46,7 +46,7 @@ export default function Hero() {
                   transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
                   className="block"
                 >
-                  44 YEARS OF
+                  34 YEARS OF
                 </motion.span>
               </span>
               <span className="block overflow-hidden py-1">
@@ -78,7 +78,7 @@ export default function Hero() {
               transition={{ duration: 0.8, delay: 0.4 }}
               className="text-zinc-400 font-sans text-sm md:text-base leading-relaxed font-medium"
             >
-              This is not a software service. Car Decor is an iconic customization garage with 44+ years of reputation in crafting studio-grade audio stages, App-controlled optic ambient matrices, and premium Nappa cabins in Mangalore.
+              Car Decor is an iconic customization garage with 34+ years of reputation in crafting studio-grade audio stages, App-controlled optic ambient matrices, and premium Nappa cabins in Mangalore.
             </motion.p>
 
             {/* CTA action buttons */}
@@ -156,7 +156,7 @@ export default function Hero() {
         <div className="flex flex-wrap justify-center sm:justify-start items-center gap-6 md:gap-10">
           <div className="flex items-center gap-3">
             <span className="text-3xl font-heading font-black text-amber-neon text-amber-glow leading-none">
-              44+
+              34+
             </span>
             <span className="text-[9px] uppercase font-title text-zinc-500 font-bold tracking-widest leading-tight">
               Years<br />Reputation

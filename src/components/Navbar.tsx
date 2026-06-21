@@ -52,7 +52,7 @@ export default function Navbar() {
                 CAR DECOR
               </span>
               <span className="text-[9px] text-amber-neon font-title font-black tracking-widest leading-none mt-1 uppercase">
-                Est. 1982 / Atelier
+                Est. 1992 / Atelier
               </span>
             </div>
           </a>
