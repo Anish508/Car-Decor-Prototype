@@ -42,14 +42,16 @@ export default function ContactModal() {
   return (
     <AnimatePresence>
       {isOpen && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center px-4">
+        <motion.div
+          className="fixed inset-0 z-50 flex items-center justify-center px-4"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+        >
           {/* Backdrop */}
-          <motion.div
+          <div
             onClick={() => setIsOpen(false)}
-            className="absolute inset-0 bg-black/90 backdrop-blur-md"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
+            className="absolute inset-0 bg-black/90 backdrop-blur-md cursor-pointer"
           />
 
           {/* Modal Container */}
@@ -68,6 +70,7 @@ export default function ContactModal() {
 
             {/* Close Button */}
             <button
+              type="button"
               onClick={() => setIsOpen(false)}
               className="absolute top-4 right-4 w-10 h-10 bg-workshop-elevated border border-cream-accent/10 flex items-center justify-center text-cream-accent/60 hover:text-amber-neon hover:border-amber-neon/50 transition-all duration-300 rounded-none cursor-pointer"
             >
@@ -210,7 +213,7 @@ export default function ContactModal() {
               )}
             </AnimatePresence>
           </motion.div>
-        </div>
+        </motion.div>
       )}
     </AnimatePresence>
   );
