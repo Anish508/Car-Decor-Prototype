@@ -71,7 +71,7 @@ export default function Legacy() {
               {/* Background car photo - Singer/Brabus style styling */}
               <div 
                 className="absolute inset-0 bg-cover bg-center transition-transform duration-[2000ms] group-hover:scale-105"
-                style={{ backgroundImage: "url('/images/showroom.png')" }} 
+                style={{ backgroundImage: "url('/images/showroom.jpeg')" }} 
               />
               <div className="absolute inset-0 bg-gradient-to-t from-workshop-bg via-transparent to-black/40" />
 
