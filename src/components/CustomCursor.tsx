@@ -57,27 +57,28 @@ export default function CustomCursor() {
     <div className={`transition-opacity duration-300 pointer-events-none z-50 ${isVisible ? "opacity-100" : "opacity-0"}`}>
       {/* Outer Spring Glow Ring */}
       <motion.div
-        className="fixed top-0 left-0 w-8 h-8 rounded-full border border-neon-blue pointer-events-none mix-blend-screen"
+        className="fixed top-0 left-0 w-8 h-8 rounded-full border border-amber-neon pointer-events-none mix-blend-screen"
         style={{
           x: cursorXSpring,
           y: cursorYSpring,
           scale: isHovered ? 1.4 : 1,
-          backgroundColor: isHovered ? "rgba(0, 240, 255, 0.15)" : "rgba(0, 240, 255, 0.03)",
-          borderColor: isHovered ? "rgba(0, 240, 255, 1)" : "rgba(0, 240, 255, 0.4)",
+          backgroundColor: isHovered ? "rgba(255, 157, 0, 0.15)" : "rgba(255, 157, 0, 0.03)",
+          borderColor: isHovered ? "rgba(255, 157, 0, 1)" : "rgba(255, 157, 0, 0.4)",
           boxShadow: isHovered 
-            ? "0 0 15px rgba(0, 240, 255, 0.6)" 
-            : "0 0 5px rgba(0, 240, 255, 0.1)",
+            ? "0 0 15px rgba(255, 157, 0, 0.6)" 
+            : "0 0 5px rgba(255, 157, 0, 0.1)",
         }}
       />
       {/* Inner Precision Dot (Snaps instantly) */}
       <motion.div
-        className="fixed top-0 left-0 w-2 h-2 bg-white rounded-full pointer-events-none mix-blend-screen"
+        className="fixed top-0 left-0 w-2 h-2 bg-amber-neon rounded-full pointer-events-none mix-blend-screen"
         style={{
           x: cursorX,
           y: cursorY,
           // Offset inside the cursorX/Y to align center with the outer ring (outer is 32px wide, inner is 8px wide, offset = 12px)
           translateX: 12,
           translateY: 12,
+          boxShadow: "0 0 8px rgba(255, 157, 0, 0.8)",
         }}
         animate={{
           scale: isHovered ? 0.6 : 1,

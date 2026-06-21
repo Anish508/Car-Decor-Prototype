@@ -2,40 +2,38 @@ import CustomCursor from "@/components/CustomCursor";
 import SmoothScroll from "@/components/SmoothScroll";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
-import Services from "@/components/Services";
-import Showcase from "@/components/Showcase";
-import WhyChooseUs from "@/components/WhyChooseUs";
-import Brands from "@/components/Brands";
-import Process from "@/components/Process";
-import Showroom from "@/components/Showroom";
-import Trust from "@/components/Trust";
+import Legacy from "@/components/Legacy";
+import Workshop from "@/components/Workshop";
+import Transformations from "@/components/Transformations";
 import Instagram from "@/components/Instagram";
-import CTA from "@/components/CTA";
+import CustomerMachines from "@/components/CustomerMachines";
+import Brands from "@/components/Brands";
+import VisitGarage from "@/components/VisitGarage";
 import Footer from "@/components/Footer";
+import ContactModal from "@/components/ContactModal";
 
 export default function Home() {
   return (
     <SmoothScroll>
       <CustomCursor />
+      <ContactModal />
       
-      {/* Background Ambient Glows */}
-      <div className="fixed top-[-10%] left-[-10%] w-[50vw] h-[50vw] bg-neon-blue/5 rounded-full filter blur-[120px] pointer-events-none z-0" />
-      <div className="fixed bottom-[-10%] right-[-10%] w-[50vw] h-[50vw] bg-cyber-blue/5 rounded-full filter blur-[120px] pointer-events-none z-0" />
+      {/* Background Ambient Glows - Warm Hangar Lighting */}
+      <div className="fixed top-[-10%] left-[-10%] w-[50vw] h-[50vw] bg-amber-neon/3 rounded-full filter blur-[120px] pointer-events-none z-0" />
+      <div className="fixed bottom-[-10%] right-[-10%] w-[50vw] h-[50vw] bg-amber-neon/3 rounded-full filter blur-[120px] pointer-events-none z-0" />
       
-      <div className="relative z-10 flex flex-col min-h-screen">
+      <div className="relative z-10 flex flex-col min-h-screen bg-workshop-bg">
         <Navbar />
         
-        <main className="flex-1">
+        <main className="flex-grow">
           <Hero />
-          <Services />
-          <Showcase />
-          <WhyChooseUs />
-          <Brands />
-          <Process />
-          <Showroom />
-          <Trust />
+          <Legacy />
+          <Workshop />
+          <Transformations />
           <Instagram />
-          <CTA />
+          <CustomerMachines />
+          <Brands />
+          <VisitGarage />
         </main>
         
         <Footer />
